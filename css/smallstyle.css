@@ -92,7 +92,7 @@ header h4 {
 .section1 {
     display: flex;
     padding: 50px 50px 50px 50px;
-    background-color: var(--section);
+    position: relative;
     flex-wrap: wrap;
 }
 .section1 img {
@@ -109,14 +109,24 @@ header h4 {
 }
 .section1 h1 {
     margin: auto 0;
-    color: var(--hText);
+    color: var(--aText);
     font-size: 2rem;
     display: flex;
     align-items: center;
     flex: 3;
 }
 
-
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+} 
 
 /*section 2*/
 .section2 {
@@ -128,7 +138,7 @@ header h4 {
     display: block;
     margin: auto;
 }
-video {
+.section2 img {
     width: 100% !important;
     height: auto !important;
 }
